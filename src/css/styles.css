@@ -1,0 +1,328 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+}
+
+
+/* Style the header */
+header {
+  padding: 20px 0px;
+  text-align: center;
+}
+
+.subheader {
+  font-size: 22px;
+  margin: 80px 0 20px 0;
+}
+
+.full-width {
+  max-width: 100%;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  width: 100%;
+  padding: 0 100px;
+}
+
+.flex-item {
+  width: 400px;
+  align: center;
+  justify-content: center;
+}
+
+.flex-item2 {
+  width: 80%;
+  align: center;
+  justify-content: center;
+}
+
+.big-flex {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50%;
+  padding-top: 50px;
+}
+
+/* index flex box settings*/
+
+.index-flex-pic {
+  width: 400px;
+}
+
+.index-flex-text {
+  width: 40%;
+  min-width: 400px;
+  margin-left: 70px;
+  padding-bottom: 40px;
+}
+
+.index-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  width: 100%;
+  padding: 0 100px;
+}
+
+/* research.html flexbox settings*/
+
+.research-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  width: 90%;
+  padding: 0;
+  margin: auto;
+}
+
+.research-flex-text {
+  width: 50%;
+  min-width: 400px;
+  max-width: 600px;
+  margin-left: 70px;
+  padding:0;
+}
+
+.research-flex-pic {
+  width: 20%;
+  min-width: 250px;
+  max-width: 300px;
+  padding: 0;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 40px;
+}
+
+@media screen and (max-width: 799px) {
+  .research-flex-pic, .research-flex-text {
+    display: block;
+    padding-bottom: 10px;
+    margin: 0 70px;
+  }
+  .research-flex-text,{
+    min-width: 350px;
+  }
+}
+
+@media screen and (max-width: 1069px) {
+  .index-flex-text {
+    display: block;
+    margin: 0 70px;
+  }
+  .index-flex-pic {
+    padding-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .index-container{
+    padding: 15px;
+  }
+  .index-flex-text, .research-flex-text {
+    min-width: 350px;
+  }
+}
+
+/* ===========================
+      FOR RESEARCH PAGE
+============================= */
+
+.projectblock {
+  display:block;
+  padding-top: 40px;
+  width: 80%
+}
+
+.proj-pic {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 20%;
+}
+
+.proj-text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 50%;
+}
+
+/* ===========================
+      HYPERLINKS
+============================= */
+
+a:link, a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+/* ===========================
+      ITEM DETAIL PAGE 
+============================= */
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.layout-module {
+  width: 100%;
+  max-width: 1260px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.single-item-pic {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 50%;
+  height: auto;
+  padding: 4%;
+}
+
+.single-item-text {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 40%;
+  padding: 20px;
+  margin-top: 20px;
+  font-size: 20px
+  text-size-adjust: 100%;
+  vertical-align: top;
+}
+
+.aspen-module {
+  width: 80%;
+  max-width: 1260px;
+  margin-left: auto;
+  margin-right: auto;
+  align: center;
+}
+
+.aspen-pic {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 45%;
+  height: auto;
+  padding: 4%;
+}
+
+.lslide .aspen-pic img {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .single-item-pic, .single-item-text, .aspen-pic{
+    display: block;
+    width: 100%;
+    padding: 0px 20px;
+  }
+  .single-item-pic {
+    padding-top: 20px; 
+  }
+}
+
+.layout-module:before, .layout-module:after {
+    display: table;
+    content: "";
+}
+
+.name {
+  font-size: 28px;
+}
+.price {
+  font-size: 22px;
+}
+
+.topleft {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 18px;
+}
+
+
+/* ===========================
+      FOR DROPDOWN 
+============================= */
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: white;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
